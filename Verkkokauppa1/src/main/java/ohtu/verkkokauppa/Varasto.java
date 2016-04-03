@@ -2,8 +2,9 @@ package ohtu.verkkokauppa;
 
 import java.util.*;
 import org.springframework.stereotype.Component;
+import org.springframework.beans.factory.annotation.Autowired;
 
-//@Component
+@Component
 public class Varasto implements VarastoRajapinta {
 
 //    private static Varasto instanssi;
@@ -19,6 +20,7 @@ public class Varasto implements VarastoRajapinta {
     private KirjanpitoRajapinta kirjanpito;
     private HashMap<Tuote, Integer> saldot;  
     
+    @Autowired
     public Varasto(KirjanpitoRajapinta kirjanpitoRaj) {
         kirjanpito = kirjanpitoRaj;
         saldot = new HashMap<Tuote, Integer>();

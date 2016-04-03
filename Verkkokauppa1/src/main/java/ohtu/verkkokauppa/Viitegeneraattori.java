@@ -2,7 +2,7 @@ package ohtu.verkkokauppa;
 
 import org.springframework.stereotype.Component;
 
-//@Component
+@Component
 public class Viitegeneraattori implements GeneraattoriRajapinta {
 
 //    private static Viitegeneraattori instanssi;

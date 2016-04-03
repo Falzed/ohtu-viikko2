@@ -9,7 +9,7 @@
                    http://www.springframework.org/schema/context
                    http://www.springframework.org/schema/context/spring-context-3.1.xsd">
     
-    <bean id="kirjanpito" class = "ohtu.verkkokauppa.Kirjanpito">
+<!--    <bean id="kirjanpito" class = "ohtu.verkkokauppa.Kirjanpito">
     </bean>
     
     <bean id="pankki" class = "ohtu.verkkokauppa.Pankki">
@@ -28,7 +28,7 @@
         <constructor-arg ref="varasto" />
         <constructor-arg ref="pankki" />
         <constructor-arg ref="generaattori" />
-    </bean>
+    </bean>-->
     
     <context:annotation-config />
     <context:component-scan base-package="ohtu.verkkokauppa" />

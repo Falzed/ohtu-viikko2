@@ -16,10 +16,10 @@ public class Main {
 //        Viitegeneraattori generaattori = new Viitegeneraattori();
 //        Kauppa kauppa = new Kauppa(varasto, pankki, generaattori);
         
-        Kirjanpito kirjanpito = ctx.getBean(Kirjanpito.class);
-        Varasto varasto = ctx.getBean(Varasto.class);
-        Pankki pankki = ctx.getBean(Pankki.class);
-        Viitegeneraattori generaattori = ctx.getBean(Viitegeneraattori.class);
+        Kirjanpito kirjanpito = (Kirjanpito) ctx.getBean("kirjanpito");
+        Varasto varasto = (Varasto) ctx.getBean("varasto");
+        Pankki pankki = (Pankki) ctx.getBean("pankki");
+        Viitegeneraattori generaattori = (Viitegeneraattori) ctx.getBean("viitegeneraattori");
         Kauppa kauppa = ctx.getBean(Kauppa.class);
         
         // kauppa hoitaa yhden asiakkaan kerrallaan seuraavaan tapaan:
